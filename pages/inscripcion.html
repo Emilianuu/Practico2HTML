@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo.jpg" alt="logo" width="100px">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver al inicio</a></li>
+        </ul>
+    </nav>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre..." required>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido..." required>
+        <br>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese su correo..." required>
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" placeholder="Ingrese su edad..." required>
+        <br>
+        <br>
+        <legend>Seleccione sus cursos de interés:</legend>
+        <div>
+            <input type="checkbox" id="html/css" name="lenguajes" value="html/css">
+            <label for="html/css">HTML/CSS</label>
+        </div>
+        <div>
+            <input type="checkbox" id="javascript" name="lenguajes" value="javascript">
+            <label for="javascript">JavaScript</label>
+        </div>
+        <div>
+            <input type="checkbox" id="php/mysql" name="lenguajes" value="php/mysql">
+            <label for="php/mysql">PHP/MySQL</label>
+        </div>
+        <br>
+        <legend>¿Cual es tu turno preferido?</legend>
+        <div>
+            <input type="radio" id="matutino" name="turnos" value="matutino" checked>
+            <label for="matutino">Matutino</label>
+        </div>
+        <div>
+            <input type="radio" id="vespertino" name="turnos" value="vespertino">
+            <label for="vespertino">vespertino</label>
+        </div>
+        <div>
+            <input type="radio" id="nocturno" name="turnos" value="nocturno">
+            <label for="nocturno">nocturno</label>
+        </div>
+        <br>
+        <legend>¿Aceptas las condiciones del evento?</legend>
+        <div>
+            <input type="checkbox" id="condiciones" name="condiciones" value="acepto" required>
+            <label for="condiciones">Acepto las condiciones</label>
+        </div>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
